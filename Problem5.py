@@ -17,8 +17,8 @@ def reverse(s):  # function for reversing string using stack
 
 
 def is_palindrome(m):
-    text2 = re.sub(r'\W+', '', m)
-    text3 = reverse(text2)  # removes all non-alphanumeric characters
+    text2 = re.sub(r'\W+', '', m)  # removes all non-alphanumeric characters
+    text3 = reverse(text2)  # reverses string
     return bool(text2.casefold() == text3.casefold())  # returns true or false value (ignores upper-case)
 
 
